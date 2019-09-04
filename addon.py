@@ -188,5 +188,6 @@ class Counter:
 
 
 addons = [
-    Counter()
+    Counter(),
+    Events()
 ]
