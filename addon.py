@@ -23,6 +23,8 @@ class Events:
 
     def requestheaders(self, flow: mitmproxy.http.HTTPFlow):
         ctx.log.info("requestheaders is " % flow.request.headers)
+        with open("haha.txt","ab+") as f:
+            f.write(flow.request.headers)
         """
             HTTP request headers were successfully read. At this point, the body
             is empty.
